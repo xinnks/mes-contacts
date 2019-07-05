@@ -20,17 +20,17 @@ export default new Vuex.Store({
         emails: ['xinnks@gmail.com','jamescsinkala@gmail.com'],
         faxes: [],
         address: 'Tegeta, Kinondoni, Dar es Salaam.',
-        notes: 'God\'s Son'
+        notes: 'Best Friend'
       }, //  name: String, photos: Array, id: String, phones: Array, emails: Array, faxes: Array, address: String notes: String
       {
         name: 'Jonathan James',
         photos: {},
-        id: 'hbxfdgbfg',
-        phones: ['0678807552','0685306012'],
-        emails: ['xinnks@gmail.com','jamescsinkala@gmail.com'],
+        id: 'hbxfdgbdvfffg',
+        phones: ['0988765456','09677754'],
+        emails: ['jthej@gmail.com','jj1-1@gmail.com'],
         faxes: [],
-        address: 'Tegeta, Kinondoni, Dar es Salaam.',
-        notes: 'God\'s Son'
+        address: 'Mwenge, Kinondoni, Dar es Salaam.',
+        notes: 'Nemesis'
       }
     ]
   },
@@ -52,7 +52,10 @@ export default new Vuex.Store({
     },
     deleteContact({state, commit}, id){
       commit('deleteContact', {id: id})
+    },
+    getContact({state}, id){
+      return state.contacts.filter(contact => contact.id === id);
     }
   },
-  plugins: [createPersistedState()]
+  // plugins: [createPersistedState()]
 })
