@@ -13,7 +13,11 @@
   color: #2c3e50;
   margin: 0 !important;
 }
-  body{
-    background-color: #edf2f7;
+body{
+  background-color: #edf2f7;
+}
+  ::selection{
+    color: transparent;
+    background: transparent;
   }
 </style>
