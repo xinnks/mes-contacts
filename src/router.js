@@ -21,6 +21,11 @@ export default new Router({
       path: '/add-contact',
       name: 'add-contact-page',
       component: () => import('./views/AddContact.vue')
+    },
+    {
+      path: '/target-planner',
+      name: 'target-planner',
+      component: () => import('./views/TargetPlanner.vue')
     }
   ]
 })

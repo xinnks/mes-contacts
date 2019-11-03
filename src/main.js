@@ -13,6 +13,9 @@ Vue.filter('nonce', function(length = 20) {
     }
     return text;
 })
+Vue.filter('currency',(val = 0)=>{
+    return val.toLocaleString('en-US')
+})
 
 new Vue({
   router,
